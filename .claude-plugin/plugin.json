@@ -1,0 +1,21 @@
+{
+  "name": "hookest",
+  "version": "0.1.0",
+  "description": "Find real viral Instagram Reels hooks, see which categories are gaining, and write new opening lines from the Hookest hook library.",
+  "author": {
+    "name": "Hookest",
+    "url": "https://hookest.com"
+  },
+  "homepage": "https://hookest.com/features/mcp-server",
+  "repository": "https://github.com/wask-co/hookest-plugin",
+  "license": "MIT",
+  "keywords": [
+    "hooks",
+    "ads",
+    "reels",
+    "instagram",
+    "marketing",
+    "ugc",
+    "mcp"
+  ]
+}

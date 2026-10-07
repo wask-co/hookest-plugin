@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "hookest": {
+      "type": "http",
+      "url": "https://hookest.com/mcp"
+    }
+  }
+}

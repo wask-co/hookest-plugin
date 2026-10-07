@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=block" rel="stylesheet">
+<style>
+  :root {
+    --bg: #FBF8FF; --fg: #1E1440; --muted: #554E72; --brand: #FF3D71;
+    --surface: #FFFFFF; --surface-2: #F6F2FD; --border: rgba(30, 20, 64, 0.10);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 1280px; height: 440px; overflow: hidden; }
+  body { font-family: 'Plus Jakarta Sans', sans-serif; color: var(--fg); background: var(--bg); position: relative; }
+  .wave { position: absolute; left: 0; top: 200px; width: 1280px; height: 80px; }
+  .row { position: absolute; inset: 0; display: flex; gap: 32px; padding: 48px 56px; align-items: stretch; }
+  .card {
+    flex: 1; background: var(--surface); border: 1px solid var(--border); border-radius: 24px;
+    padding: 30px 30px 32px; position: relative;
+    box-shadow: 0 20px 40px -28px rgba(30, 20, 64, 0.35);
+  }
+  .num {
+    width: 40px; height: 40px; border-radius: 12px; background: rgba(255, 61, 113, 0.12); color: var(--brand);
+    display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 18px;
+  }
+  h3 { margin-top: 20px; font-size: 26px; font-weight: 800; letter-spacing: -0.02em; }
+  .desc { margin-top: 8px; font-size: 16px; color: var(--muted); line-height: 1.5; font-weight: 500; }
+  .demo { margin-top: 24px; }
+  .bubble {
+    background: var(--fg); color: #fff; border-radius: 16px 16px 4px 16px; padding: 14px 16px;
+    font-size: 16px; font-weight: 600; line-height: 1.45;
+  }
+  .chips { display: flex; flex-direction: column; gap: 10px; }
+  .chip {
+    display: flex; align-items: center; gap: 10px; background: var(--surface-2); border-radius: 12px;
+    padding: 11px 14px; font-size: 15px; font-weight: 600;
+  }
+  .chip b { color: var(--brand); font-weight: 700; }
+  .chip span { color: var(--muted); font-weight: 500; margin-left: auto; font-size: 14px; }
+  .list { display: flex; flex-direction: column; gap: 12px; }
+  .item { display: flex; align-items: center; gap: 12px; font-size: 16px; font-weight: 600; }
+  .dot { width: 22px; height: 22px; border-radius: 50%; background: var(--brand); flex: none; display: flex; align-items: center; justify-content: center; }
+  .dot svg { width: 12px; height: 12px; }
+</style>
+</head>
+<body>
+  <svg class="wave" viewBox="0 0 1280 80" preserveAspectRatio="none" fill="none">
+    <path d="M0 40 C 140 0, 260 80, 420 40 S 700 0, 860 40 S 1140 80, 1280 40" stroke="#FF3D71" stroke-opacity="0.30" stroke-width="3"/>
+  </svg>
+  <div class="row">
+    <div class="card">
+      <div class="num">1</div>
+      <h3>Ask</h3>
+      <p class="desc">In plain words, about your product or niche.</p>
+      <div class="demo"><div class="bubble">What hooks are working for skincare ads right now?</div></div>
+    </div>
+    <div class="card">
+      <div class="num">2</div>
+      <h3>Hookest searches</h3>
+      <p class="desc">Claude calls the Hookest library for you.</p>
+      <div class="demo chips">
+        <div class="chip"><b>list_filters</b><span>valid categories</span></div>
+        <div class="chip"><b>find_hooks</b><span>real Reels hooks</span></div>
+        <div class="chip"><b>get_hook</b><span>metrics + comments</span></div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="num">3</div>
+      <h3>You get a brief</h3>
+      <p class="desc">Grounded in real examples, ready to write from.</p>
+      <div class="demo list">
+        <div class="item"><span class="dot"><svg viewBox="0 0 12 12" fill="none"><path d="M2.5 6.2l2.3 2.3 4.7-5" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Top examples with links</div>
+        <div class="item"><span class="dot"><svg viewBox="0 0 12 12" fill="none"><path d="M2.5 6.2l2.3 2.3 4.7-5" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>What they have in common</div>
+        <div class="item"><span class="dot"><svg viewBox="0 0 12 12" fill="none"><path d="M2.5 6.2l2.3 2.3 4.7-5" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>New hooks for your product</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

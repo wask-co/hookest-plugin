@@ -1,0 +1,18 @@
+{
+  "name": "hookest",
+  "owner": {
+    "name": "Hookest",
+    "url": "https://hookest.com"
+  },
+  "metadata": {
+    "description": "Official Hookest plugin: real viral hooks, category trends and hook writing for Claude Code."
+  },
+  "plugins": [
+    {
+      "name": "hookest",
+      "source": "./",
+      "description": "Real viral hooks, category trends and hook writing from the Hookest library.",
+      "version": "0.1.0"
+    }
+  ]
+}

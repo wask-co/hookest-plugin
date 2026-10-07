@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=block" rel="stylesheet">
+<style>
+  :root {
+    --bg: #FBF8FF; --fg: #1E1440; --muted: #554E72; --brand: #FF3D71;
+    --surface: #FFFFFF; --border: rgba(30, 20, 64, 0.10); --ink: #1E1440;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 1280px; height: 640px; overflow: hidden; }
+  body {
+    font-family: 'Plus Jakarta Sans', sans-serif; color: var(--fg);
+    background:
+      radial-gradient(620px 420px at 88% 18%, rgba(255, 61, 113, 0.14), transparent 70%),
+      radial-gradient(520px 380px at 6% 100%, rgba(120, 90, 255, 0.10), transparent 70%),
+      var(--bg);
+    position: relative;
+  }
+  .waves { position: absolute; left: 0; bottom: 0; width: 1280px; height: 260px; }
+  .wrap { position: absolute; inset: 0; display: flex; align-items: center; padding: 0 72px; gap: 56px; }
+  .left { flex: 1; }
+  .brand { display: flex; align-items: center; gap: 14px; }
+  .brand img { height: 52px; width: auto; }
+  .word { font-size: 40px; font-weight: 800; letter-spacing: -0.03em; }
+  .word span { color: var(--brand); }
+  .pill {
+    margin-left: 6px; font-size: 15px; font-weight: 600; color: var(--fg);
+    background: var(--surface); border: 1px solid var(--border);
+    padding: 7px 14px; border-radius: 999px;
+  }
+  h1 { margin-top: 40px; font-size: 54px; white-space: nowrap; line-height: 1.04; font-weight: 800; letter-spacing: -0.035em; }
+  h1 em { font-style: normal; color: var(--brand); }
+  p.sub { margin-top: 22px; font-size: 20px; line-height: 1.5; color: var(--muted); max-width: 500px; font-weight: 500; }
+
+  .term {
+    width: 500px; flex: none; background: var(--ink); border-radius: 20px; overflow: hidden;
+    box-shadow: 0 30px 60px -20px rgba(30, 20, 64, 0.45), 0 0 0 1px rgba(30, 20, 64, 0.08);
+  }
+  .bar { display: flex; gap: 8px; padding: 16px 18px; background: rgba(255,255,255,0.04); border-bottom: 1px solid rgba(255,255,255,0.07); }
+  .bar i { width: 12px; height: 12px; border-radius: 50%; background: rgba(255,255,255,0.18); }
+  .bar i:first-child { background: var(--brand); }
+  .body { padding: 22px 24px 26px; font-size: 16px; line-height: 1.75; color: #E9E4FA; }
+  .line { white-space: nowrap; }
+  .p { color: var(--brand); font-weight: 700; margin-right: 10px; }
+  .dim { color: #A79FC0; }
+  .ok { color: #C6F24E; font-weight: 700; margin-right: 8px; }
+  .gap { height: 14px; }
+  .ask { background: rgba(255,255,255,0.06); border-radius: 12px; padding: 12px 14px; margin: 4px 0 12px; color: #fff; font-weight: 600; white-space: normal; line-height: 1.5; }
+  .tool { display: inline-block; font-size: 14px; font-weight: 600; padding: 3px 10px; border-radius: 8px; background: rgba(255, 61, 113, 0.16); color: #FF8FAD; margin-right: 6px; }
+  .arrow { color: #6E6690; margin-right: 6px; }
+</style>
+</head>
+<body>
+  <svg class="waves" viewBox="0 0 1280 260" preserveAspectRatio="none" fill="none">
+    <path d="M0 190 C 160 130, 300 240, 470 180 S 780 90, 960 160 S 1180 230, 1280 150" stroke="#FF3D71" stroke-opacity="0.35" stroke-width="3"/>
+    <path d="M0 215 C 180 165, 320 255, 500 205 S 800 130, 980 190 S 1190 245, 1280 185" stroke="#FF3D71" stroke-opacity="0.18" stroke-width="2"/>
+    <path d="M0 238 C 200 205, 340 262, 530 230 S 820 175, 1000 218 S 1200 255, 1280 220" stroke="#1E1440" stroke-opacity="0.08" stroke-width="2"/>
+  </svg>
+
+  <div class="wrap">
+    <div class="left">
+      <div class="brand">
+        <img src="mark.svg" alt="">
+        <div class="word">Hook<span>est</span></div>
+        <div class="pill">for Claude Code</div>
+      </div>
+      <h1>Viral hooks,<br><em>inside Claude Code.</em></h1>
+      <p class="sub">Real Instagram Reels hooks, category trends and hook writing, one prompt away.</p>
+    </div>
+
+    <div class="term">
+      <div class="bar"><i></i><i></i><i></i></div>
+      <div class="body">
+        <div class="line"><span class="p">&gt;</span>/plugin install hookest@hookest</div>
+        <div class="line"><span class="ok">✓</span><span class="dim">Installed hookest · 2 skills · 1 command</span></div>
+        <div class="gap"></div>
+        <div class="ask">What hooks are working for skincare ads right now?</div>
+        <div class="line"><span class="arrow">↳</span><span class="tool">list_filters</span><span class="tool">find_hooks</span><span class="tool">get_hook</span></div>
+        <div class="line"><span class="ok">✓</span><span class="dim">Top examples, what they share, 3 directions</span></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
