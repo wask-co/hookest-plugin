@@ -55,10 +55,10 @@ Skills run on their own when your request matches. You don't need to name them.
 ## Try it
 
 ```
-What hooks are working for skincare ads right now?
+What hooks are working for restaurant Reels right now?
 ```
 ```
-Write 5 hooks for my protein bar Reel. Audience: gym beginners.
+Write 5 hooks for my burger place Reel. Audience: students.
 ```
 ```
 /hookest:trends 30d
