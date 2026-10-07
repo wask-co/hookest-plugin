@@ -11,8 +11,8 @@
     {
       "name": "hookest",
       "source": "./",
-      "description": "Real viral hooks, category trends and hook writing from the Hookest library.",
-      "version": "0.1.0"
+      "description": "Real viral hooks, hook writing, video scoring and competitor tracking from the Hookest library.",
+      "version": "0.2.0"
     }
   ]
 }

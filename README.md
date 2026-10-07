@@ -41,14 +41,36 @@ Hookest and approve access. A free account is enough to start.
 
 ## What's inside
 
-| | Name | What it does |
-|---|---|---|
-| 🔎 | **`hook-research`** skill | Pulls real hooks for your product or niche, opens the best ones for metrics and comment insights, and writes a short brief |
-| ✍️ | **`write-hooks`** skill | Writes 5 to 8 hooks for your product, each tied to a real library example, and checks how long each one takes to say |
-| 📈 | **`/hookest:trends`** | Shows which categories are gaining or losing momentum, with top examples from the leaders |
-| 🔌 | **Hookest MCP** | All Hookest tools: `find_hooks`, `get_hook`, `find_similar_hooks`, `discover_trends`, `generate_hooks`, saved hooks, creator tracking and more |
+### Skills
 
 Skills run on their own when your request matches. You don't need to name them.
+
+| | Skill | What it does |
+|---|---|---|
+| 🔎 | **`hook-research`** | Pulls real hooks for your product or niche, opens the best ones for metrics and comment insights, and writes a short brief |
+| ✍️ | **`write-hooks`** | Writes 5 to 8 hooks for your product, each tied to a real library example, and checks how long each one takes to say |
+| 🎬 | **`video-check`** | Uploads a video from your machine to the Hookest Virality Predictor, returns its 0 to 100 opening score and turns it into concrete edits |
+| 👀 | **`competitor-watch`** | Reports new posts and follower changes for the accounts you track, and adds new ones only after you confirm |
+| 🗂️ | **`swipe-file`** | Reviews your saved hooks, finds more like them, and gets the hook clip or Hook Editor link |
+
+### Commands
+
+| Command | What it does |
+|---|---|
+| `/hookest:hooks <topic>` | Real viral hooks for a topic |
+| `/hookest:write <product>` | New hooks for your product |
+| `/hookest:score <video.mp4>` | Score your video's opening before you post |
+| `/hookest:trends [window]` | Categories gaining or losing momentum |
+| `/hookest:weekly [category]` | This week's new viral hooks |
+| `/hookest:competitors [@handle]` | What changed for your competitors |
+| `/hookest:saved` | Your saved hooks |
+| `/hookest:account` | Your plan and remaining quota |
+
+### Hookest MCP
+
+All 29 Hookest tools, including `find_hooks`, `get_hook`, `find_similar_hooks`,
+`discover_trends`, `generate_hooks`, the Virality Predictor, saved hooks and
+creator tracking. Ask in plain words and Claude picks the right one.
 
 <br>
 
@@ -61,7 +83,10 @@ What hooks are working for restaurant Reels right now?
 Write 5 hooks for my burger place Reel. Audience: students.
 ```
 ```
-/hookest:trends 30d
+/hookest:score ~/Movies/launch-reel.mp4
+```
+```
+/hookest:weekly
 ```
 
 <br>
@@ -71,6 +96,9 @@ Write 5 hooks for my burger place Reel. Audience: students.
 - **Instagram Reels only.** The library does not cover TikTok or YouTube yet.
 - **Quota.** `generate_hooks`, `lookup_creator` and `search_creators` use your
   Hookest quota. The skills ask you before calling them.
+- **Video scoring.** Your first analysis is free, then it needs Hookest Pro.
+  Uploads are mp4, up to 32 seconds and 40 MB; `/hookest:score` offers to trim
+  longer videos to their opening (it needs `ffmpeg` for that).
 - **Library items only.** Hookest analyses hooks in its library. It cannot
   analyse any Instagram URL you paste.
 
