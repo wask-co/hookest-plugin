@@ -8,6 +8,9 @@
   },
   "homepage": "https://hookest.com/features/mcp-server",
   "privacyPolicyUrl": "https://hookest.com/privacy",
+  "termsOfServiceUrl": "https://hookest.com/terms",
+  "supportUrl": "https://hookest.com/contact",
+  "documentationUrl": "https://hookest.com/features/mcp-server/docs",
   "repository": "https://github.com/wask-co/hookest-plugin",
   "license": "MIT",
   "keywords": [
