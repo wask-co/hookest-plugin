@@ -10,7 +10,6 @@
   "privacyPolicyUrl": "https://hookest.com/privacy",
   "repository": "https://github.com/wask-co/hookest-plugin",
   "license": "MIT",
-  "icon": ".claude-plugin/icon.png",
   "keywords": [
     "hooks",
     "ads",
