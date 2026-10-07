@@ -12,8 +12,15 @@
 </p>
 
 <p align="center">
-  <b>Find real viral Instagram Reels hooks, see which categories are gaining,<br>and write new opening lines for your ads, without leaving Claude Code.</b>
+  <b>Find viral Instagram Reels hooks and ideas, see which categories are trending,<br>write new hooks for your topic, and score your video's opening before you post.</b>
 </p>
+
+Hookest is a library of viral Instagram Reels hooks: the first seconds of a
+video, with real engagement data (views, likes, comments) and a sentiment
+analysis of those comments. Library search, trends, hook writing and saved
+hooks are free. Hook clip downloads, competitor tracking and monthly video
+analyses are part of Hookest Pro, and every account includes one free video
+analysis.
 
 <br>
 
