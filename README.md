@@ -123,7 +123,7 @@ https://hookest.com/mcp
 <br>
 
 <p align="center">
-  <a href="https://hookest.com"><img src="assets/mark.svg" alt="Hookest" height="36"></a>
+  <a href="https://hookest.com"><img src="assets/mark.png" alt="Hookest" height="36"></a>
   <br>
   <sub>Made by <a href="https://hookest.com">Hookest</a> · MIT licensed</sub>
 </p>
